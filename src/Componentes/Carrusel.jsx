@@ -9,14 +9,8 @@ export const Carrusel = (props) => {
   const [seletedImg, setSeletedImg] = useState(img[0]);
 
   const selectNewImage = (index, imaguen, next = true) => {
-    const condition = next ? selectedIndex < img.length : seletedImg > 0;
-    const nextIndex = next
-      ? condition
-        ? condition + 1
-        : 0
-      : condition
-      ? condition - 1
-      : condition.length - 1;
+    const condition = next ? selectedIndex < img.length - 1 : selectedIndex > 0;
+    const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : img.length - 1;
     setSeletedImg(img[nextIndex]);
     setSelectedIndex(nextIndex);
   };

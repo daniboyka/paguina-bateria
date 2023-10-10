@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
- <Carrusel images={images} autoplay={true} showButtons={false}/>
+ <Carrusel images={images} autoplay={true} showButtons={true}/>
     </>
   )
 }

@@ -12,54 +12,48 @@ const CarruselImg = styled.img`
   }
 `;
 
-interface Props {
-  images: string[];
-  autoplay?: boolean;
-  showButtons?: boolean;
-}
-
-export const Carrusel = (props: Props) => {
+export const Carrusel = ({ images, autoplay, showButtons }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [seletedImg, setSeletedImg] = useState(props.images[0]);
+  const [selectedImg, setSelectedImg] = useState(images[0]);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    if (props.autoplay || !props.showButtons) {
+    if (autoplay || !showButtons) {
       const interval = setInterval(() => {
-        selectNewImage(selectedIndex, props.images);
-      }, 1000);
+        selectNewImage(selectedIndex, images);
+      }, 1500);
       return () => clearInterval(interval);
     }
-  }, [props.autoplay, props.showButtons, props.images, selectedIndex]);
+  }, [autoplay, showButtons, images, selectedIndex]);
 
-  const selectNewImage = (index: number, images: string[], next = true) => {
+  const selectNewImage = (index, images, next = true) => {
     setLoaded(false);
     setTimeout(() => {
       const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
       const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
-      setSeletedImg(images[nextIndex]);
+      setSelectedImg(images[nextIndex]);
       setSelectedIndex(nextIndex);
     }, 500);
   };
 
   const previus = () => {
-    selectNewImage(selectedIndex, props.images, false);
+    selectNewImage(selectedIndex, images, false);
   };
 
   const next = () => {
-    selectNewImage(selectedIndex, props.images);
+    selectNewImage(selectedIndex, images);
   };
 
   return (
     <>
       <CarruselImg
-        src={seletedImg}
+        src={selectedImg}
         alt="daniel"
         className={loaded ? "loaded" : ""}
         onLoad={() => setLoaded(true)} // Establecemos "loaded" como verdadero cuando se carga la imagen
       />
       <div>
-        {props.showButtons ? (
+        {showButtons ? (
           <>
             <button onClick={previus}>{"<"}</button>
             <button onClick={next}>{">"}</button>

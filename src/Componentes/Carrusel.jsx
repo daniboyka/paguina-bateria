@@ -1,33 +1,73 @@
-import { useState } from "react";
-import bateria1 from "../utiles/IMG/baterias/cc.jpg";
-import bateria2 from "../utiles/IMG/baterias/bateria_1.png";
-import bateria3 from "../utiles/IMG/baterias/bateria_3.jpg";
+import { useEffect, useState } from "react";
+import styled from "styled-components";
 
-export const Carrusel = (props) => {
-  const img = [bateria1, bateria2, bateria3];
+const CarruselImg = styled.img`
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: 1s;
+  &.loaded {
+    opacity: 1;
+  }
+`;
+
+interface Props {
+  images: string[];
+  autoplay?: boolean;
+  showButtons?: boolean;
+}
+
+export const Carrusel = (props: Props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [seletedImg, setSeletedImg] = useState(img[0]);
+  const [seletedImg, setSeletedImg] = useState(props.images[0]);
+  const [loaded, setLoaded] = useState(false);
 
-  const selectNewImage = (index, imaguen, next = true) => {
-    const condition = next ? selectedIndex < img.length - 1 : selectedIndex > 0;
-    const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : img.length - 1;
-    setSeletedImg(img[nextIndex]);
-    setSelectedIndex(nextIndex);
+  useEffect(() => {
+    if (props.autoplay || !props.showButtons) {
+      const interval = setInterval(() => {
+        selectNewImage(selectedIndex, props.images);
+      }, 1000);
+      return () => clearInterval(interval);
+    }
+  }, [props.autoplay, props.showButtons, props.images, selectedIndex]);
+
+  const selectNewImage = (index: number, images: string[], next = true) => {
+    setLoaded(false);
+    setTimeout(() => {
+      const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
+      const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
+      setSeletedImg(images[nextIndex]);
+      setSelectedIndex(nextIndex);
+    }, 500);
   };
 
   const previus = () => {
-    selectNewImage(selectedIndex, img, false);
+    selectNewImage(selectedIndex, props.images, false);
   };
 
   const next = () => {
-    selectNewImage(selectedIndex, img);
+    selectNewImage(selectedIndex, props.images);
   };
 
   return (
     <>
-      <img src={seletedImg} alt="daniel" />
-      <button onClick={previus}>{"<"}</button>
-      <button onClick={next}>{">"}</button>
+      <CarruselImg
+        src={seletedImg}
+        alt="daniel"
+        className={loaded ? "loaded" : ""}
+        onLoad={() => setLoaded(true)} // Establecemos "loaded" como verdadero cuando se carga la imagen
+      />
+      <div>
+        {props.showButtons ? (
+          <>
+            <button onClick={previus}>{"<"}</button>
+            <button onClick={next}>{">"}</button>
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
     </>
   );
 };

@@ -21,7 +21,7 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
     if (autoplay || !showButtons) {
       const interval = setInterval(() => {
         selectNewImage(selectedIndex, images);
-      }, 1500);
+      }, 1000);
       return () => clearInterval(interval);
     }
   }, [autoplay, showButtons, images, selectedIndex]);

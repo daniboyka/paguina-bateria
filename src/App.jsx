@@ -1,17 +1,13 @@
-import { Carrusel } from "./Componentes/Carrusel"
-import bateria1 from "./utiles/IMG/baterias/cc.jpg";
-import bateria2 from "./utiles/IMG/baterias/bateria_1.png";
-import bateria3 from "./utiles/IMG/baterias/bateria_3.jpg";
-
+import { Navbar } from "./Componentes/NavBar";
+import { Home } from "./pague/Home";
 
 function App() {
-  const images =[bateria1, bateria2, bateria3]
-
   return (
-    <>
- <Carrusel images={images} autoplay={true} showButtons={true}/>
-    </>
-  )
+    <div>
+      <Navbar/>
+      <Home />
+    </div>
+  );
 }
 
-export default App
+export default App;

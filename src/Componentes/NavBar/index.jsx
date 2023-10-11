@@ -4,9 +4,9 @@ export const Navbar = () => {
   return (
 
     <div className="bg-gray-100 font-sans min-h-screen">
-      <div className="bg-white shadow w-1/4">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
+      <div className="bg-white shadow w-full">
+        <div className="container px-4">
+          <div className="flex items-center justify-between py-4 ">
             <div>
               {/* ... Contenido de Navbar */}
             </div>

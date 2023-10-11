@@ -7,8 +7,12 @@ export const Home = () => {
   const images = [bateria1, bateria2, bateria3];
 
   return (
-    <>
+    
+    <div className="w-full">
+    <h1>HOME</h1>
       <Carrusel images={images} autoplay={true} showButtons={true} />
-    </>
+
+    </div>
+    
   );
 };

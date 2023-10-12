@@ -50,7 +50,7 @@ export const Navbar = () => {
               <div className={`hidden sm:block`}>
                 <NavLink
                   href="#"
-                  className="text-gray-800 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                  className="text-gray-800 text-sm font-semibold border px-4 py-2 outline-double rounded-lg hover:outline-double hover:text-purple-600 hover:border-purple-600"
                 >
                   Contactanos
                 </NavLink>

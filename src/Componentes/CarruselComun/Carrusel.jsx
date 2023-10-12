@@ -29,8 +29,16 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
   const selectNewImage = (index, images, next = true) => {
     setLoaded(false);
     setTimeout(() => {
-      const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
-      const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
+      const condition = next
+        ? selectedIndex < images.length - 1
+        : selectedIndex > 0;
+      const nextIndex = next
+        ? condition
+          ? selectedIndex + 1
+          : 0
+        : condition
+        ? selectedIndex - 1
+        : images.length - 1;
       setSelectedImg(images[nextIndex]);
       setSelectedIndex(nextIndex);
     }, 500);
@@ -45,14 +53,16 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
   };
 
   return (
-    <>
-      <CarruselImg
-        src={selectedImg}
-        alt="daniel"
-        className={loaded ? "loaded" : ""}
-        onLoad={() => setLoaded(true)} // Establecemos "loaded" como verdadero cuando se carga la imagen
-      />
-      <div>
+    <div className="w-full h-56">
+      <div className="w-full h-full">
+        <CarruselImg
+          src={selectedImg}
+          alt="daniel"
+          className={loaded ? "loaded" : ""}
+          onLoad={() => setLoaded(true)} // Establecemos "loaded" como verdadero cuando se carga la imagen
+        />
+      </div>
+      <div className="">
         {showButtons ? (
           <>
             <button onClick={previus}>{"<"}</button>
@@ -62,6 +72,6 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
           <></>
         )}
       </div>
-    </>
+    </div>
   );
 };

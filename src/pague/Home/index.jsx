@@ -8,10 +8,9 @@ export const Home = () => {
 
   return (
     
-    <div className="w-full">
+    <div className="bg-indigo-600 w-full h-screen">
     <h1>HOME</h1>
       <Carrusel images={images} autoplay={true} showButtons={true} />
-
     </div>
     
   );

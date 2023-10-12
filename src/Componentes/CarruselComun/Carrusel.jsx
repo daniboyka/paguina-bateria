@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const CarruselImg = styled.img`
-  max-width: 500px;
-  width: 100%;
-  height: auto;
+
+
   opacity: 0;
   transition: 1s;
   &.loaded {
@@ -53,12 +52,12 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
   };
 
   return (
-    <div className="w-full h-56">
+    <div className="w-full h-80 flex flex-col items-center">
       <div className="w-full h-full">
         <CarruselImg
           src={selectedImg}
           alt="daniel"
-          className={loaded ? "loaded" : ""}
+          className={`w-full h-80 md:h-80 object-cover ${loaded ? "loaded" : ""}`}
           onLoad={() => setLoaded(true)} // Establecemos "loaded" como verdadero cuando se carga la imagen
         />
       </div>

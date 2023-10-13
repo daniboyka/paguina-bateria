@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const CarruselImg = styled.img`
-
-
   opacity: 0;
   transition: 1s;
   &.loaded {
@@ -20,7 +18,7 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
     if (autoplay || !showButtons) {
       const interval = setInterval(() => {
         selectNewImage(selectedIndex, images);
-      }, 1000);
+      }, 1500);
       return () => clearInterval(interval);
     }
   }, [autoplay, showButtons, images, selectedIndex]);
@@ -52,20 +50,39 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
   };
 
   return (
-    <div className="w-full h-80 flex flex-col items-center">
-      <div className="w-full h-full">
+    <div className="w-full h-80 flex flex-col items-center relative">
+      <div className="m-3 sm:m-4">
+        <span className="text-base fuente-mono font-semibold sm:text-4xl">
+          Contamos con las mejores marcas del mercado!!!
+        </span>
+      </div>
+      <div className="w-full sm:h-full relative">
         <CarruselImg
           src={selectedImg}
           alt="daniel"
-          className={`w-full h-80 md:h-80 object-cover ${loaded ? "loaded" : ""}`}
-          onLoad={() => setLoaded(true)} // Establecemos "loaded" como verdadero cuando se carga la imagen
+          className={`w-full h-28 sm:h-80 md:h-80 object-cover ${
+            loaded ? "loaded" : ""
+          }`}
+          onLoad={() => setLoaded(true)}
         />
       </div>
-      <div className="">
+      <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
         {showButtons ? (
           <>
-            <button onClick={previus}>{"<"}</button>
-            <button onClick={next}>{">"}</button>
+            <button className="" onClick={previus}>
+              {"<"}
+            </button>
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
+        {showButtons ? (
+          <>
+            <button className="" onClick={next}>
+              {">"}
+            </button>
           </>
         ) : (
           <></>

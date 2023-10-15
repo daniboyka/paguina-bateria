@@ -50,17 +50,17 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
   };
 
   return (
-    <div className="w-full h-80 flex flex-col items-center relative">
-      <div className="m-3 sm:m-4">
-        <span className="text-base fuente-mono font-semibold sm:text-4xl">
+    <div className="w-full h-80 sm:h-auto flex flex-col items-center relative">
+      <div className="m-3 sm:h-14 sm:mt-2 sm:mb-">
+        <p className="text-center text-base fuente-mono font-semibold md:text-4xl sm:text-2xl">
           Contamos con las mejores marcas del mercado!!!
-        </span>
+        </p>
       </div>
-      <div className="w-full sm:h-full relative">
+      <div className="w-full h-full sm:h-auto relative">
         <CarruselImg
           src={selectedImg}
           alt="daniel"
-          className={`w-full h-28 sm:h-80 md:h-80 object-cover ${
+          className={`w-full h-full sm:h-80 object-cover ${
             loaded ? "loaded" : ""
           }`}
           onLoad={() => setLoaded(true)}

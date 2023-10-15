@@ -1,7 +1,12 @@
 export const Sellos = () => {
     return(
-        <div className="flex justify-center w-full h-64 m-2">
-            <h1>sello</h1>
+<section className="h-screen w-full">
+    <div className="bg-zinc-100 h-96">
+        <div className="bg-gray-500 m-2 pt-8">
+        <h1>Dani</h1>
+
         </div>
+    </div>
+</section>
     )
 }

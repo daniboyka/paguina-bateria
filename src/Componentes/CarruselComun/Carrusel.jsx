@@ -18,7 +18,7 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
     if (autoplay || !showButtons) {
       const interval = setInterval(() => {
         selectNewImage(selectedIndex, images);
-      }, 1500);
+      }, 2000);
       return () => clearInterval(interval);
     }
   }, [autoplay, showButtons, images, selectedIndex]);
@@ -51,12 +51,12 @@ export const Carrusel = ({ images, autoplay, showButtons }) => {
 
   return (
     <div className="w-full sm:h-auto flex flex-col items-center relative">
-    <div className="m-3 sm:h-14 sm:mt-2 sm:mb-">
-      <p className="text-center text-base fuente-mono font-semibold md:text-4xl sm:text-2xl">
+    {/* <div className="m-3 sm:h-14 sm:mt-2 sm:mb-">
+      <p className="text-gray-100 text-center text-base fuente-mono font-semibold md:text-4xl sm:text-2xl">
         Contamos con las mejores marcas del mercado!!!
       </p>
-    </div>
-    <div className="w-full h-40 sm:h-auto sm:p-1 relative">
+    </div> */}
+    <div className="w-full h-40 sm:h-auto relative">
   <div className="w-full h-40 sm:h-80">
     <CarruselImg
       src={selectedImg}

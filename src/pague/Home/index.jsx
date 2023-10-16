@@ -24,14 +24,14 @@ export const Home = () => {
       }}
     >
       <Carrusel images={images} autoplay={true} showButtons={true} />
-      <section className="mt-20 w-full h-96 flex flex-col">
+      <section className="mt-20 w-full h-auto flex flex-col">
         <div className="relative">
           <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
             <div style={{ width: "50%", padding: "20px" }}>
               <img className="h-60 w-60" src={card1} alt="card1" />
             </div>
 
-            <div  style={{ width: "50%", padding: "20px" }}>
+            <div style={{ width: "50%", padding: "20px" }}>
               <LayoutP>
                 <strong>Tipo:</strong>12x72
               </LayoutP>
@@ -56,33 +56,38 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
+          <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2 md:ml-auto">
             <div style={{ width: "50%", padding: "20px" }}>
               <img className="h-60 w-60" src={card2} alt="card2" />
             </div>
             <div style={{ width: "50%", padding: "20px" }}>
               <LayoutP>
-                <strong>Tipo:</strong>12x72
+                <strong>Tipo:</strong>12×65
               </LayoutP>
               <LayoutP>
                 <strong>Voltaje:</strong> 12 V
               </LayoutP>
               <LayoutP>
-                <strong>Capacidad:</strong> 72 Amper / 20 Hs.
+                <strong>Capacidad:</strong> 65 Amper / 20 Hs.
               </LayoutP>
               <LayoutP>
-                <strong>Largo:</strong> 27.5 cm
+                <strong>Largo:</strong> 24.0 cm
               </LayoutP>
               <LayoutP>
                 <strong>Ancho:</strong> 17.5 cm
               </LayoutP>
               <LayoutP>
-                <strong>Alto:</strong> 19.0 cm
+                <strong>Alto:</strong> 17.5 cm
               </LayoutP>
               <LayoutP>
-                <strong>Lado:</strong> Polo Positivo: Derecho
+                <strong>Lado:</strong> Polo Positivo: Izquierdo
               </LayoutP>
             </div>
+          </div>
+        </div>
+        <div className="flex justify-center mt-10">
+          <div className="bg-neutral-800/80 w-4/12 h-20 flex items-center justify-center rounded-2xl cursor-pointer">
+            <p  className="text-gray-100 text-center text-4xl font-semibold" >Mas productos!</p>
           </div>
         </div>
       </section>

@@ -89,7 +89,7 @@ export const Home = () => {
 
           </div>
         <div className="flex justify-center w-full h-16 sm:mt-10">
-          <div className="bg-neutral-800/80 w-full h-auto sm:w-4/12 sm:h-20 flex items-center justify-center rounded-2xl cursor-pointer">
+          <div className="bg-neutral-800 w-full h-auto sm:w-4/12 sm:h-20 flex items-center justify-center sm:rounded-2xl cursor-pointer">
             <p  className="text-gray-100 pb-1 text-center text-4xl font-semibold" >Mas productos!</p>
           </div>
         </div>

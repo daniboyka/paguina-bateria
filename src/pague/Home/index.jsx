@@ -26,6 +26,7 @@ export const Home = () => {
       <Carrusel images={images} autoplay={true} showButtons={true} />
       <section className="mt-20 w-full h-auto flex flex-col">
         <div className="relative">
+        <div className="hidden sm:flex sm:flex-col">
           <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
             <div style={{ width: "50%", padding: "20px" }}>
               <img className="h-60 w-60" src={card1} alt="card1" />
@@ -85,9 +86,11 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-10">
-          <div className="bg-neutral-800/80 w-4/12 h-20 flex items-center justify-center rounded-2xl cursor-pointer">
-            <p  className="text-gray-100 text-center text-4xl font-semibold" >Mas productos!</p>
+
+          </div>
+        <div className="flex justify-center w-full h-16 sm:mt-10">
+          <div className="bg-neutral-800/80 w-full h-auto sm:w-4/12 sm:h-20 flex items-center justify-center rounded-2xl cursor-pointer">
+            <p  className="text-gray-100 pb-1 text-center text-4xl font-semibold" >Mas productos!</p>
           </div>
         </div>
       </section>

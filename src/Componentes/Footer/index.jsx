@@ -12,11 +12,11 @@ const Footer = () => {
       <footer id="footer" className=" bg-slate-50 h-64 w-full z-50 dark:bg-gray-900 ">
         <div className="border-t border-b border-gray-200 dark:border-gray-700 py-16">
           <div className="mx-auto container px-4 xl:px-12 2xl:px-4">
-            <div className="flex justify-between flex-col lg:flex-row">
-                <div className='flex justify-center object-cover cursor-pointer h-40 w-1/2 px-6'>
+            <div className="flex flex-col items-center lg:items-start sm:justify-between sm:flex-row">
+                <div className='flex sm:justify-center object-cover cursor-pointer h-40 w-1/2 px-6'>
                     <img className='h-28 w-40' src={Logo} alt="logo" />
                 </div>
-              <div className="w-full lg:w-1/2 px-6">
+              <div className="sm:w-full lg:w-1/2 px-6">
                 <h4 className="font-bold mb-4 text-lg">Compañia</h4>
                 <ul>                  
                   <li className="mt-2">
@@ -44,7 +44,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full lg:w-1/2 px-6">
+              <div className="sm:w-full lg:w-1/2 px-6">
                 <h4 className="font-bold mb-4 text-lg">Poductos</h4>
                 <ul>
                   <li>
@@ -57,7 +57,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-full lg:w-1/2 flex flex-col items-center ">
+              <div className="sm:w-full lg:w-1/2 flex flex-col sm:items-center ">
                 <h4 className="font-bold mb-4 text-lg">Seguinos</h4>
                 <div className="flex">
                   

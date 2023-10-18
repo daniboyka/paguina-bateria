@@ -4,6 +4,11 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
+  const openContact = () => {
+    setIsContactOpen(!isContactOpen);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -53,9 +58,9 @@ export const Navbar = () => {
                 </NavLink>
               </div>
 
-              <div className={`hidden sm:block`}>
+              <div className={`hidden sm:block`}onClick={openContact}>
                 <NavLink
-                  to="/error404"
+                  
                   className="text-gray-800 text-sm font-semibold border px-4 py-2 outline-double rounded-lg hover:outline-double hover:text-purple-600 hover:border-purple-600"
                 >
                   Contactanos

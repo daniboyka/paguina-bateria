@@ -101,6 +101,7 @@ const Footer = () => {
                     
                     <div className="pl-4 flex text-gray-800 dark:text-gray-50 cursor-pointer transition-transform hover:scale-110">
                       <svg
+                        // eslint-disable-next-line react/no-unknown-property
                         class="w-6 h-6 text-gray-800 fill-current dark:text-gray-50 cursor-pointer transition-transform hover:scale-110"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"

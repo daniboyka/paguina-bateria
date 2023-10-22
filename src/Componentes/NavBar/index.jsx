@@ -84,25 +84,25 @@ export const Navbar = () => {
               <div className="flex flex-col">
                 <NavLink
                   to="/home"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/error404"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
                 >
                   Servicios
                 </NavLink>
                 <NavLink
                   to="/error404"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
                 >
                   Productos
                 </NavLink>
                 <NavLink
                   to="/error404"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1"
+                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
                 >
                   Sucursales
                 </NavLink>

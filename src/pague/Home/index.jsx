@@ -10,6 +10,7 @@ import fondo3 from "../../utiles/IMG/Fondos/fondo3.jpg";
 import card1 from "../../utiles/IMG/cards/m1.png";
 import card2 from "../../utiles/IMG/cards/w1.png";
 import { LayoutP } from "../../utiles/LayoutP";
+import { Contactanos } from "../../Componentes/Contactanos";
 
 export const Home = () => {
   const images = [bateria1, bateria2, bateria3, bateria4];
@@ -23,6 +24,9 @@ export const Home = () => {
         backgroundPosition: "center",
       }}
     >
+      <div>
+      <Contactanos/>
+      </div>
       <Carrusel images={images} autoplay={true} showButtons={true} />
       <section className="mt-20 w-full h-auto flex flex-col">
         <div className="relative">

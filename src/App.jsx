@@ -7,27 +7,29 @@ import { Productos } from "./pague/productos";
 import { Sucursales } from "./pague/Sucursales";
 import { Servicios } from "./pague/Servicios";
 import Footer from "./Componentes/Footer";
+import { BateriaProvider } from "./Contex";
 
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/home", element: <Home /> },
-    { path: "/error404", element: <Error404/> },
-    { path: "/servicios", element: <Servicios/> },
-    { path: "/productos", element: <Productos/> },
-    { path: "/sucursales", element: <Sucursales/> },
-  
+    { path: "/error404", element: <Error404 /> },
+    { path: "/servicios", element: <Servicios /> },
+    { path: "/productos", element: <Productos /> },
+    { path: "/sucursales", element: <Sucursales /> },
   ]);
   return routes;
 };
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <AppRoutes />
-      <Footer/>
-    </BrowserRouter>
+    <BateriaProvider>
+      <BrowserRouter>
+        <Navbar />
+        <AppRoutes />
+        <Footer />
+      </BrowserRouter>
+    </BateriaProvider>
   );
 }
 

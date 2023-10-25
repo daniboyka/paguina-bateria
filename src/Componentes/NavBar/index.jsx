@@ -1,14 +1,21 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../utiles/IMG/Logo.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { BateriatContext } from '../../Contex'
+
 
 export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isContactOpen, setIsContactOpen] = useState(false);
+  
+ const Context = useContext(BateriatContext)
 
-  const openContact = () => {
-    setIsContactOpen(!isContactOpen);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const showProduct = () => {   
+    Context.abrirContactos();
   };
+
+
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -58,7 +65,7 @@ export const Navbar = () => {
                 </NavLink>
               </div>
 
-              <div className={`hidden sm:block`}onClick={openContact}>
+              <div className={`hidden sm:block`} onClick={() => showProduct()}>
                 <NavLink
                   
                   className="text-gray-800 text-sm font-semibold border px-4 py-2 outline-double rounded-lg hover:outline-double hover:text-purple-600 hover:border-purple-600"

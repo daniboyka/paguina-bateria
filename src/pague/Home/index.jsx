@@ -4,9 +4,7 @@ import bateria2 from "../../utiles/IMG/baterias/bateria_1.jpg";
 import bateria1 from "../../utiles/IMG/baterias/bateria_2.jpg";
 import bateria3 from "../../utiles/IMG/baterias/bateria_3.jpg";
 import bateria4 from "../../utiles/IMG/baterias/bateria_4.jpg";
-import fondo1 from "../../utiles/IMG/Fondos/fondo1.jpg";
-import fondo2 from "../../utiles/IMG/Fondos/fondo2.jpg";
-import fondo3 from "../../utiles/IMG/Fondos/fondo3.jpg";
+import fondo11 from "../../utiles/IMG/Fondos/fondo11.jpg";
 import card1 from "../../utiles/IMG/cards/m1.png";
 import card2 from "../../utiles/IMG/cards/w1.png";
 import { LayoutP } from "../../utiles/LayoutP";
@@ -19,7 +17,7 @@ export const Home = () => {
     <div
       className="w-full min-h-screen"
       style={{
-        backgroundImage: `url('${fondo3}')`,
+        backgroundImage: `url('${fondo11}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

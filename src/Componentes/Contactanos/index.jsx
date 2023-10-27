@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { BateriatContext } from "../../Contex/";
+import fondo8 from "../../utiles/IMG/Fondos/fondo8.avif";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
 //Poruct Detail- Abrir y cerrar detail
@@ -9,9 +10,14 @@ export const Contactanos = () => {
 
   return (
     <aside
+      style={{
+        backgroundImage: `url('${fondo8}')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
       className={`${
         Context.estadoContacto
-          ? "fixed flex inset-x-0 inset-y-16 sm:inset-y-32 sm:inset-x-72 items-center justify-center border-2 rounded-xl border-orange-700/50 bg-zinc-300 z-50"
+          ? "fixed inset-x-0 inset-y-16 sm:inset-y-32 sm:inset-x-72 items-center justify-center border-4 rounded-xl border-black z-50"
           : "hidden"
       }`}
     >

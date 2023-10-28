@@ -39,7 +39,7 @@ import { Contactanos } from "../../Componentes/Contactanos";
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
   {/* Detalle de Servicios */}
-  <div className="bg-white bg-opacity-75 backdrop-blur-md rounded-lg shadow p-6">
+  <div className="bg-white bg-opacity-60 backdrop-blur-md rounded-lg shadow p-6">
     <h3 className="text-xl font-semibold text-gray-900 mb-4">
       Instalación de Baterías
     </h3>
@@ -49,7 +49,7 @@ import { Contactanos } from "../../Componentes/Contactanos";
   </div>
 
   {/* Otras descripciones de servicios */}
-  <div className="bg-white bg-opacity-75 backdrop-blur-md rounded-lg shadow p-6">
+  <div className="bg-white bg-opacity-60 backdrop-blur-md rounded-lg shadow p-6">
     <h3 className="text-xl font-semibold text-gray-900 mb-4">
       Diagnóstico de Baterías
     </h3>
@@ -105,7 +105,7 @@ import { Contactanos } from "../../Componentes/Contactanos";
         </div>
 
         {/* Política de Garantía */}
-        <div className="mt-12 rounded-lg shadow bg-white bg-opacity-75 backdrop-blur-md p-6">
+        <div className="mt-12 rounded-lg shadow bg-white bg-opacity-60 backdrop-blur-md p-6">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Política de Garantía
           </h3>

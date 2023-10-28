@@ -45,13 +45,13 @@ export const Sucursales = () => {
               <strong>Sucursal II</strong>
             </p>
             <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-              <strong>Provincia:</strong> Entre Rios
+              <strong>Provincia:</strong> Buenos Aires
             </p>
             <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-              <strong>Localidad:</strong> Concepción del Uruguay
+              <strong>Localidad:</strong> NI IDEA
             </p>
             <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-              <strong>Dirección:</strong> 25 de Agosto 932
+              <strong>Dirección:</strong> TAMPOCO TENGO IDEA
             </p>
 
             </div>

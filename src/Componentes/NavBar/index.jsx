@@ -46,7 +46,7 @@ export const Navbar = () => {
                   Home
                 </NavLink>
                 <NavLink
-                  to="/error404"
+                  to="/servicios"
                   className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
                 >
                   Servicios
@@ -58,7 +58,7 @@ export const Navbar = () => {
                   Productos
                 </NavLink>
                 <NavLink
-                  to="/error404"
+                  to="/sucursales"
                   className="text-gray-800 text-sm font-semibold hover:text-purple-600"
                 >
                   Sucursales
@@ -119,9 +119,9 @@ export const Navbar = () => {
                   Sucursales
                 </NavLink>
 
-                <div className="flex justify-between items-center border-t-2 pt-2">
+                <div className="flex justify-between items-center border-t-2 pt-2"  onClick={() => showProduct()}>
                   <NavLink
-                    to="/error404"
+                    
                     className="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600"
                   >
                     Contactanos

@@ -9,6 +9,7 @@ import card1 from "../../utiles/IMG/cards/m1.png";
 import card2 from "../../utiles/IMG/cards/w1.png";
 import { LayoutP } from "../../utiles/LayoutP";
 import { Contactanos } from "../../Componentes/Contactanos";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const images = [bateria1, bateria2, bateria3, bateria4];
@@ -92,7 +93,12 @@ export const Home = () => {
           </div>
         <div className="flex justify-center w-full h-16 sm:mt-10">
           <div className="bg-neutral-800 w-full h-auto sm:w-4/12 sm:h-20 flex items-center justify-center sm:rounded-2xl cursor-pointer">
+           <Link
+           to="/error404"
+           >
             <p  className="text-gray-100 pb-1 text-center text-4xl font-semibold" >Mas productos!</p>
+           </Link>
+
           </div>
         </div>
       </section>

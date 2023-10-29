@@ -101,7 +101,7 @@ export const Navbar = () => {
                   Home
                 </NavLink>
                 <NavLink
-                  to="/error404"
+                  to="/servicios"
                   className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
                 >
                   Servicios
@@ -113,7 +113,7 @@ export const Navbar = () => {
                   Productos
                 </NavLink>
                 <NavLink
-                  to="/error404"
+                  to="/sucursales"
                   className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
                 >
                   Sucursales

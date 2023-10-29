@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="mx-auto container px-4 xl:px-12 2xl:px-4">
             <div className="flex flex-col items-center lg:items-start sm:justify-between sm:flex-row">
                 <div className='flex sm:justify-center object-cover cursor-pointer h-40 w-1/2 px-6'>
-                    <img className='h-28 w-40' src={Logo} alt="logo" />
+                    <img className='h-28 w-48' src={Logo} alt="logo" />
                 </div>
               <div className="sm:w-full lg:w-1/2 px-6">
                 <h4 className="font-bold mb-4 text-lg">Compañia</h4>

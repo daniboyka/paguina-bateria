@@ -3,7 +3,7 @@ import { Navbar } from "./Componentes/NavBar";
 import { Home } from "./pague/Home";
 import "./App.css";
 import Error404 from "./pague/Error";
-import { Productos } from "./pague/productos";
+import { Productos } from "./pague/Productos";
 import { Sucursales } from "./pague/Sucursales";
 import { Servicios } from "./pague/Servicios";
 import Footer from "./Componentes/Footer";

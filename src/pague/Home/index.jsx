@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import { Carrusel } from "../../Componentes/CarruselComun/Carrusel";
 import { Sellos } from "../../Componentes/Sellos";
 import bateria2 from "../../utiles/IMG/baterias/bateria_1.jpg";
@@ -11,8 +12,12 @@ import card3 from "../../utiles/IMG/cards/mn1.png";
 import { LayoutP } from "../../utiles/LayoutP";
 import { Contactanos } from "../../Componentes/Contactanos";
 import { Link } from "react-router-dom";
+import { CartMovie } from "../../Componentes/CardMovie";
 
 export const Home = () => {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
   const images = [bateria1, bateria2, bateria3, bateria4];
 
   return (
@@ -25,112 +30,118 @@ export const Home = () => {
       }}
     >
       <div>
-      <Contactanos/>
+        <Contactanos />
       </div>
       <Carrusel images={images} autoplay={true} showButtons={true} />
       <section className="mt-20 w-full h-auto flex flex-col">
-        <div className="relative">
-        <div className="hidden sm:flex sm:flex-col">
-          <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
-            <div style={{ width: "50%", padding: "20px" }}>
-              <img className="h-60 w-60" src={card1} alt="card1" />
+
+      {isMobile ? (
+        // Muestra la componente CartMovie en pantallas pequeñas
+        <CartMovie card1={card1} card2={card2} card3={card3} />
+      ) : (
+
+
+         <div className="relative">
+          <div className="hidden sm:flex sm:flex-col">
+            <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
+              <div style={{ width: "50%", padding: "20px" }}>
+                <img className="h-60 w-60" src={card1} alt="card1" />
+              </div>
+
+              <div style={{ width: "50%", padding: "20px" }}>
+                <LayoutP>
+                  <strong>Tipo:</strong>12x72
+                </LayoutP>
+                <LayoutP>
+                  <strong>Voltaje:</strong> 12 V
+                </LayoutP>
+                <LayoutP>
+                  <strong>Capacidad:</strong> 72 Amper / 20 Hs.
+                </LayoutP>
+                <LayoutP>
+                  <strong>Largo:</strong> 27.5 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Ancho:</strong> 17.5 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Alto:</strong> 19.0 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Lado:</strong> Polo Positivo: Derecho
+                </LayoutP>
+              </div>
             </div>
 
-            <div style={{ width: "50%", padding: "20px" }}>
-              <LayoutP>
-                <strong>Tipo:</strong>12x72
-              </LayoutP>
-              <LayoutP>
-                <strong>Voltaje:</strong> 12 V
-              </LayoutP>
-              <LayoutP>
-                <strong>Capacidad:</strong> 72 Amper / 20 Hs.
-              </LayoutP>
-              <LayoutP>
-                <strong>Largo:</strong> 27.5 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Ancho:</strong> 17.5 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Alto:</strong> 19.0 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Lado:</strong> Polo Positivo: Derecho
-              </LayoutP>
+            <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2 md:ml-auto">
+              <div style={{ width: "50%", padding: "20px" }}>
+                <img className="h-60 w-60" src={card2} alt="card2" />
+              </div>
+              <div style={{ width: "50%", padding: "20px" }}>
+                <LayoutP>
+                  <strong>Tipo:</strong>12×65
+                </LayoutP>
+                <LayoutP>
+                  <strong>Voltaje:</strong> 12 V
+                </LayoutP>
+                <LayoutP>
+                  <strong>Capacidad:</strong> 65 Amper / 20 Hs.
+                </LayoutP>
+                <LayoutP>
+                  <strong>Largo:</strong> 24.0 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Ancho:</strong> 17.5 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Alto:</strong> 17.5 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Lado:</strong> Polo Positivo: Izquierdo
+                </LayoutP>
+              </div>
+            </div>
+
+            <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
+              <div style={{ width: "50%", padding: "20px" }}>
+                <img className="h-60 w-60" src={card3} alt="card3" />
+              </div>
+
+              <div style={{ width: "50%", padding: "20px" }}>
+                <LayoutP>
+                  <strong>Tipo:</strong>12x70
+                </LayoutP>
+                <LayoutP>
+                  <strong>Voltaje:</strong> 12 V
+                </LayoutP>
+                <LayoutP>
+                  <strong>Capacidad:</strong> 70 Amper / 20 Hs.
+                </LayoutP>
+                <LayoutP>
+                  <strong>Largo:</strong> 28.0 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Ancho:</strong> 17.5 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Alto:</strong> 17.5 cm
+                </LayoutP>
+                <LayoutP>
+                  <strong>Lado:</strong> Polo Positivo: Derecho
+                </LayoutP>
+              </div>
             </div>
           </div>
+        </div> )}
 
-          <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2 md:ml-auto">
-            <div style={{ width: "50%", padding: "20px" }}>
-              <img className="h-60 w-60" src={card2} alt="card2" />
-            </div>
-            <div style={{ width: "50%", padding: "20px" }}>
-              <LayoutP>
-                <strong>Tipo:</strong>12×65
-              </LayoutP>
-              <LayoutP>
-                <strong>Voltaje:</strong> 12 V
-              </LayoutP>
-              <LayoutP>
-                <strong>Capacidad:</strong> 65 Amper / 20 Hs.
-              </LayoutP>
-              <LayoutP>
-                <strong>Largo:</strong> 24.0 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Ancho:</strong> 17.5 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Alto:</strong> 17.5 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Lado:</strong> Polo Positivo: Izquierdo
-              </LayoutP>
-            </div>
-          </div>
 
-          <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
-            <div style={{ width: "50%", padding: "20px" }}>
-              <img className="h-60 w-60" src={card3} alt="card3" />
-            </div>
-
-            <div style={{ width: "50%", padding: "20px" }}>
-              <LayoutP>
-                <strong>Tipo:</strong>12x70
-              </LayoutP>
-              <LayoutP>
-                <strong>Voltaje:</strong> 12 V
-              </LayoutP>
-              <LayoutP>
-                <strong>Capacidad:</strong> 70 Amper / 20 Hs.
-              </LayoutP>
-              <LayoutP>
-                <strong>Largo:</strong> 28.0 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Ancho:</strong> 17.5 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Alto:</strong> 17.5 cm
-              </LayoutP>
-              <LayoutP>
-                <strong>Lado:</strong> Polo Positivo: Derecho
-              </LayoutP>
-            </div>
-          </div>
-
-        </div>
-
-          </div>
         <div className="flex justify-center w-full h-16 sm:mt-10">
           <div className="bg-neutral-800 w-full h-auto sm:w-4/12 sm:h-20 flex items-center justify-center sm:rounded-2xl cursor-pointer">
-           <Link
-           to="/error404"
-           >
-            <p  className="text-gray-100 hover:text-red-600 pb-1 text-center text-4xl font-semibold">Mas productos!</p>
-           </Link>
-
+            <Link to="/error404">
+              <p className="text-gray-100 hover:text-red-600 pb-1 text-center text-4xl font-semibold">
+                Mas productos!
+              </p>
+            </Link>
           </div>
         </div>
       </section>

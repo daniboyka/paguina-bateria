@@ -29,7 +29,7 @@ export const Home = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className='mt-2 mb-4'>
+      <div className=''>
         <Contactanos />
       </div>
       <Carrusel images={images} autoplay={true} showButtons={true} />
@@ -37,7 +37,7 @@ export const Home = () => {
 
       {isMobile ? (
         // Muestra la componente CartMovie en pantallas pequeñas
-        <div>
+        <div className='mb-2'>
           <CartMovie card1={card1} card2={card2} card3={card3} />
         </div>
       ) : (

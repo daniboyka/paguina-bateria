@@ -62,7 +62,7 @@ export const Sucursales = () => {
             <img
               src={fondo01}
               alt="Sucursal 1"
-              className="w-full h-64 object-cover rounded-md mb-4"
+              className="w-full h-auto object-cover rounded-md mb-4"
             />
           </div>
         </div>

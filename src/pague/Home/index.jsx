@@ -37,7 +37,9 @@ export const Home = () => {
 
       {isMobile ? (
         // Muestra la componente CartMovie en pantallas pequeñas
-        <CartMovie card1={card1} card2={card2} card3={card3} />
+        <div>
+          <CartMovie card1={card1} card2={card2} card3={card3} />
+        </div>
       ) : (
 
 

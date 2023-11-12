@@ -4,7 +4,7 @@
 export const CartMovie = ({ card1, card2, card3 }) => {
   return (
     <div className="">
-      <div className="bg-neutral-800/80 w-full h-48 gap-4 flex justify-center items-center mb-1">
+      <div className="bg-neutral-800/80 w-full h-52 gap-4 flex justify-center items-center mb-1">
         <div className="w-40 h-40">
           <img className="h-36 w-full" src={card1} alt="card1" />
         </div>

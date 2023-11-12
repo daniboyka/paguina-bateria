@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
 export const CartMovie = ({ card1, card2, card3 }) => {
   return (
     <div className="">
@@ -11,26 +10,19 @@ export const CartMovie = ({ card1, card2, card3 }) => {
         <div className="">
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Tipo:</strong>12x72
-          </p>        
+          </p>
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Voltaje:</strong> 12 V
           </p>
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Capacidad:</strong> 72 Amper / 20 Hs.
           </p>
-          
           <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Largo:</strong> 27.5 cm
-          </p>
-          <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Ancho:</strong> 17.5 cm
-          </p>
-          <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Alto:</strong> 19.0 cm
+            <strong>Medidas:</strong> 27.5x17.5x19 cm
           </p>
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Lado:</strong> Polo Positivo: Derecho
-          </p>   
+          </p>
         </div>
       </div>
 
@@ -40,27 +32,20 @@ export const CartMovie = ({ card1, card2, card3 }) => {
         </div>
         <div className="">
           <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Tipo:</strong>12x72
-          </p>        
+            <strong>Tipo:</strong>12x65
+          </p>
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Voltaje:</strong> 12 V
           </p>
           <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Capacidad:</strong> 72 Amper / 20 Hs.
-          </p>
-          
-          <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Largo:</strong> 27.5 cm
+            <strong>Capacidad:</strong> 65 Amper / 20 Hs.
           </p>
           <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Ancho:</strong> 17.5 cm
+            <strong>Medidas:</strong> 24x17.5x17.5 cm
           </p>
           <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Alto:</strong> 19.0 cm
+            <strong>Lado:</strong> Polo Positivo: Izquierdo
           </p>
-          <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Lado:</strong> Polo Positivo: Derecho
-          </p>   
         </div>
       </div>
 
@@ -71,30 +56,22 @@ export const CartMovie = ({ card1, card2, card3 }) => {
         <div className="">
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Tipo:</strong>12x72
-          </p>        
+          </p>
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Voltaje:</strong> 12 V
           </p>
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Capacidad:</strong> 72 Amper / 20 Hs.
           </p>
-          
           <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Largo:</strong> 27.5 cm
+            <strong>Medidas:</strong> 28x17.5x17.5 cm
           </p>
-          <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Ancho:</strong> 17.5 cm
-          </p>
-          <p className="text-gray-100 text-left text-sm p-1">
-            <strong>Alto:</strong> 19.0 cm
-          </p>
+
           <p className="text-gray-100 text-left text-sm p-1">
             <strong>Lado:</strong> Polo Positivo: Derecho
-          </p>   
+          </p>
         </div>
       </div>
-
-
     </div>
   );
 };

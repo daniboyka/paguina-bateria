@@ -41,25 +41,25 @@ export const Navbar = () => {
               <div className={`hidden sm:block`}>
                 <NavLink
                   to="/home"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mr-4"
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/servicios"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mr-4"
                 >
                   Servicios
                 </NavLink>
                 <NavLink
                   to="/error404"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mr-4"
                 >
                   Productos
                 </NavLink>
                 <NavLink
                   to="/sucursales"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600"
                 >
                   Sucursales
                 </NavLink>
@@ -68,7 +68,7 @@ export const Navbar = () => {
               <div className={`hidden sm:block`} onClick={() => showProduct()}>
                 <NavLink
                   
-                  className="text-gray-800 text-sm font-semibold border px-4 py-2 outline-double rounded-lg hover:outline-double hover:text-purple-600 hover:border-purple-600"
+                  className="text-gray-800 text-sm font-semibold border px-4 py-2 outline-double rounded-lg hover:outline-double hover:text-red-600 hover:border-red-600"
                 >
                   Contactanos
                 </NavLink>
@@ -77,7 +77,7 @@ export const Navbar = () => {
               <div className="sm:hidden cursor-pointer" onClick={toggleMenu}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 text-purple-600"
+                  className="w-6 h-6 text-red-600"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -96,25 +96,25 @@ export const Navbar = () => {
               <div className="flex flex-col">
                 <NavLink
                   to="/home"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mb-1 pl-4"
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/servicios"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mb-1 pl-4"
                 >
                   Servicios
                 </NavLink>
                 <NavLink
                   to="/error404"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mb-1 pl-4"
                 >
                   Productos
                 </NavLink>
                 <NavLink
                   to="/sucursales"
-                  className="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1 pl-4"
+                  className="text-gray-800 text-sm font-semibold hover:text-red-600 mb-1 pl-4"
                 >
                   Sucursales
                 </NavLink>
@@ -122,7 +122,7 @@ export const Navbar = () => {
                 <div className="flex justify-between items-center border-t-2 pt-2"  onClick={() => showProduct()}>
                   <NavLink
                     
-                    className="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                    className="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-red-600 hover:border-red-600"
                   >
                     Contactanos
                   </NavLink>

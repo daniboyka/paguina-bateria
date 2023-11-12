@@ -34,7 +34,7 @@ const Footer = () => {
                 <li className="mt-2">
                   <Link
                     to="/servicios"
-                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base hover:text-brand dark:hover:text-brand hover:text-purple-600 text-gray-800 dark:text-gray-50"
+                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base hover:text-brand dark:hover:text-brand hover:text-red-600 text-gray-800 dark:text-gray-50"
                   >
                     Servicios
                   </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <li className="mt-2">
                   <Link
                     to="/sucursales"
-                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base dark:hover:text-brand hover:text-purple-600 text-gray-800 dark:text-gray-50"
+                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base dark:hover:text-brand hover:text-red-600 text-gray-800 dark:text-gray-50"
                   >
                     Sucursales
                   </Link>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <li className="mt-2">
                   <button
                     onClick={() => showProduct()}
-                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base dark:hover:text-brand hover:text-purple-600 text-gray-800 dark:text-gray-50"
+                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base dark:hover:text-brand hover:text-red-600 text-gray-800 dark:text-gray-50"
                   >
                     Consultas
                   </button>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/error404"
-                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base hover:text-brand dark:hover:text-brand hover:text-purple-600 text-gray-800 dark:text-gray-50"
+                    className="text-xs lg:text-sm leading-none hover:font-medium hover:text-base hover:text-brand dark:hover:text-brand hover:text-red-600 text-gray-800 dark:text-gray-50"
                   >
                     Informacion
                   </Link>

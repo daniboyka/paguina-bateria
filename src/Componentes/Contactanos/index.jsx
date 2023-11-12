@@ -29,16 +29,16 @@ export const Contactanos = () => {
         >
           <XMarkIcon className="h-8 w-8  hover:border-2 border-spacing-9 rounded-full" />
         </div>
-        <div className="absolute h-40 w-full mt-32 sm:ml-40 flex flex-col items-center sm:items-start gap-10">
-          <div className="">
-            <h2 className="text-lg sm:text-5xl font-sans subpixel-antialiased font-semibold text-teal-600 pt-1">
+        <div className="absolute h-40 w-full mt-32 sm:ml-40 flex flex-col justify-center sm:justify-center items-center sm:items-start gap-10">
+          <div className=" sm:flex sn:flex-wrap">
+            <h2 className="text-lg sm:text-5xl font-sans subpixel-antialiased font-semibold text-teal-600 sm:text-teal-600 pt-1">
               Contactate con nosotros!
             </h2>
           </div>
-          <div className="">
-            <p className="text-base sm:text-xl font-serif subpixel-antialiased"><strong>Correo:</strong><a href="mailto:caseresdami@gmail.com.ar"> caseresdami@gmail.com.ar</a></p><br></br>
-            <p className="text-base sm:text-xl font-serif subpixel-antialiased lining-nums"><strong>Telefono:</strong>  <a href="tel:3442578816"> 3442-578816</a></p><br></br>
-            <p className="text-base sm:text-xl font-serif subpixel-antialiased lining-nums"><strong>Telefono 2:</strong><a href="tel:3442578817"> 3442-578817</a></p>
+          <div className="flex flex-col flex-wrap">
+            <p className="text-base sm:text-xl font-serif subpixel-antialiased"><strong>Correo:</strong><a href="mailto:caseresdami@gmail.com.ar"> damiancaceres539.@gmail.com</a></p><br></br>
+            <p className="text-base sm:text-xl font-serif subpixel-antialiased lining-nums"><strong>Telefono:</strong>  <a href="tel:3442578816"> 3442-473758</a></p><br></br>
+            <p className="text-base sm:text-xl font-serif subpixel-antialiased lining-nums"><strong>Telefono 2:</strong><a href="tel:3442578817"> 3442-458448</a></p>
           </div>
         </div>
       </div>

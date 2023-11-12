@@ -1,9 +1,8 @@
 import { useContext } from "react";
 import { BateriatContext } from "../../Contex";
 import fondo11 from "../../utiles/IMG/Fondos/fondo11.jpg";
-import sucursal1 from "../../utiles/IMG/sucursales/sucursal1.jpg";
-import sucursal2 from "../../utiles/IMG/sucursales/sucursal2.jpg";
 import { Contactanos } from "../../Componentes/Contactanos";
+import fondo01 from "../../utiles/IMG//local/img_00.jpg";
 
 export const Sucursales = () => {
   const Context = useContext(BateriatContext);
@@ -42,24 +41,25 @@ export const Sucursales = () => {
                 ></iframe>
               </div>
               <div className="flex flex-col gap-3 justify-center items-start">
-                <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-                  <strong>Sucursal II</strong>
+                <p className="text-lg sm:text-2xl subpixel-antialiased lining-nums">
+                  <strong>Sucursal I</strong>
                 </p>
+                <br></br>
                 <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
                   <strong>Provincia:</strong> Buenos Aires
                 </p>
                 <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-                  <strong>Localidad:</strong> NI IDEA
+                  <strong>Localidad:</strong>  -
                 </p>
                 <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-                  <strong>Dirección:</strong> TAMPOCO TENGO IDEA
+                  <strong>Dirección:</strong>  -
                 </p>
               </div>
             </div>
           </div>
           <div>
             <img
-              src={sucursal2}
+              src={fondo01}
               alt="Sucursal 1"
               className="w-full h-64 object-cover rounded-md mb-4"
             />
@@ -81,9 +81,10 @@ export const Sucursales = () => {
                 ></iframe>
               </div>
               <div className="flex flex-col gap-3 justify-center items-start">
-                <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
-                  <strong>Sucursal I</strong>
+                <p className="text-lg sm:text-2xl subpixel-antialiased lining-nums ">
+                  <strong>Sucursal II</strong>
                 </p>
+                <br></br>
                 <p className="text-lg sm:text-xl subpixel-antialiased lining-nums ">
                   <strong>Provincia:</strong> Entre Rios
                 </p>
@@ -98,7 +99,7 @@ export const Sucursales = () => {
           </div>
           <div>
             <img
-              src={sucursal1}
+              src={fondo01}
               alt="Sucursal 1"
               className="w-full h-64 object-cover rounded-md mb-4"
             />
@@ -108,7 +109,7 @@ export const Sucursales = () => {
         <div className="flex justify-center p-5">
           <button
             onClick={() => showProduct()}
-            className="bg-gray-200 font-semibold text-black py-2 px-4 rounded-lg text-lg hover:text-purple-600 hover:border-purple-600"
+            className="bg-gray-200 font-semibold text-black py-2 px-4 rounded-lg text-lg hover:text-red-600 hover:border-red-600"
           >
             Contáctanos
           </button>

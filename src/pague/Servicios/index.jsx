@@ -69,7 +69,7 @@ export const Servicios = () => {
           </p>
           <button
             onClick={() => showProduct()}
-            className="bg-gray-200 font-semibold text-black py-2 px-4 rounded-lg text-lg hover:text-purple-600 hover:border-purple-600"
+            className="bg-gray-200 font-semibold text-black py-2 px-4 rounded-lg text-lg hover:text-red-600 hover:border-red-600"
           >
             Contáctanos
           </button>

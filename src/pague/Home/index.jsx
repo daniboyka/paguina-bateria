@@ -96,7 +96,7 @@ export const Home = () => {
            <Link
            to="/error404"
            >
-            <p  className="text-gray-100 pb-1 text-center text-4xl font-semibold" >Mas productos!</p>
+            <p  className="text-gray-100 hover:text-red-600 pb-1 text-center text-4xl font-semibold">Mas productos!</p>
            </Link>
 
           </div>

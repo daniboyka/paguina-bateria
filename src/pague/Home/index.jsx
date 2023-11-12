@@ -29,7 +29,7 @@ export const Home = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className='mt-2 mb-2'>
+      <div className='mt-2 mb-4'>
         <Contactanos />
       </div>
       <Carrusel images={images} autoplay={true} showButtons={true} />

@@ -7,6 +7,7 @@ import bateria4 from "../../utiles/IMG/baterias/bateria_4.jpg";
 import fondo11 from "../../utiles/IMG/Fondos/fondo11.jpg";
 import card1 from "../../utiles/IMG/cards/m1.png";
 import card2 from "../../utiles/IMG/cards/w1.png";
+import card3 from "../../utiles/IMG/cards/mn1.png";
 import { LayoutP } from "../../utiles/LayoutP";
 import { Contactanos } from "../../Componentes/Contactanos";
 import { Link } from "react-router-dom";
@@ -88,6 +89,37 @@ export const Home = () => {
               </LayoutP>
             </div>
           </div>
+
+          <div className="bg-neutral-800/80 w-1/2 h-96 flex items-center gap-20 rounded-lg md:w-1/2">
+            <div style={{ width: "50%", padding: "20px" }}>
+              <img className="h-60 w-60" src={card3} alt="card3" />
+            </div>
+
+            <div style={{ width: "50%", padding: "20px" }}>
+              <LayoutP>
+                <strong>Tipo:</strong>12x70
+              </LayoutP>
+              <LayoutP>
+                <strong>Voltaje:</strong> 12 V
+              </LayoutP>
+              <LayoutP>
+                <strong>Capacidad:</strong> 70 Amper / 20 Hs.
+              </LayoutP>
+              <LayoutP>
+                <strong>Largo:</strong> 28.0 cm
+              </LayoutP>
+              <LayoutP>
+                <strong>Ancho:</strong> 17.5 cm
+              </LayoutP>
+              <LayoutP>
+                <strong>Alto:</strong> 17.5 cm
+              </LayoutP>
+              <LayoutP>
+                <strong>Lado:</strong> Polo Positivo: Derecho
+              </LayoutP>
+            </div>
+          </div>
+
         </div>
 
           </div>
